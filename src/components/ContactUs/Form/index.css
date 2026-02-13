@@ -1,0 +1,112 @@
+.card_left_content {
+    font-family: var(--fontFamily);
+}
+
+.card_left_header {
+    font-family: var(--fontFamily2);
+    font-weight: 600;
+    color: var(--Hs--color);
+}
+
+.card_left_container {
+    text-align: left;
+    padding: 30px !important;
+}
+
+.form-control {
+    padding: 12px 15px !important;
+    border: 1px solid #faf8f8;
+    margin: 10px 0px;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.form-control-1 {
+    height: 140px;
+    resize: none;
+}
+
+.contact-card {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    padding: 30px 30px;
+}
+
+.contact_left_btn {
+    border: none;
+    padding: 5px 25px !important;
+    border-radius: 5px !important;
+    color: white !important;
+    /* background-color: #0064fb !important; */
+    background-image: linear-gradient(to right, var(--Hs--color), var(--Hs--green));
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    font-family: var(--fontFamily2) !important;
+}
+
+.contact-icon-card {
+    background-color: var(--Hs--color);
+    color: white;
+    width: 70px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    /* margin-top: 60px; */
+}
+
+.contact-icon-card:hover {
+    background-color: #242424;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-address-content {
+    margin-bottom: 5px;
+    color: black;
+    font-size: 20px;
+    font-family: var(--fontFamily);
+}
+
+.contact-address-para {
+    color: #666666;
+    font-family: var(--fontFamily2);
+}
+
+.contact-card1 {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.contact-icon-card1 {
+    background-color: var(--Hs--color);
+    color: white;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.contact-icon-card1:hover {
+    background-color: #242424;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .contact-icon-card {
+        width: 150px;
+    }
+}

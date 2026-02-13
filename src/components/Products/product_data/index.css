@@ -1,0 +1,38 @@
+.product-hs-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 50px;
+  padding-top: 100px; 
+  color: #374151;
+}
+
+.product-hs-card-header {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  height: 160px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(114, 154, 238, 0.4);
+  background: #e5e7eb;
+}
+
+.product-hs-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.product-hs-card-body {
+  padding: 24px 24px 10px 24px;
+}
+
+.product-hs-card-footer {
+  padding: 0 24px 24px;
+  text-align: left;
+}

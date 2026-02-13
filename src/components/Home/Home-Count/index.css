@@ -1,0 +1,46 @@
+.home-count-wrapper {
+  padding: 50px 20px;
+  background-color: #ecfcff;
+  font-family: var(--fontFamily);
+}
+
+.count-title-experirnce {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.experience-year-count {
+  color: var(--Hs--color);
+  font-weight: 600;
+}
+
+.count-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.count-box h2 {
+  font-size: 3.5rem;
+  /* color: var(--Hs--color); */
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(to left, var(--Hs--color), var(--Hs--green));
+  background: linear-gradient(to left, var(--Hs--green), var(--Hs--color));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.count-box p {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.project-img-count {
+  height: 70px;
+  background-color: var(--Hs--green);
+  padding: 10px;
+  border-radius: 100%;
+}

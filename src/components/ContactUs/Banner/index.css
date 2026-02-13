@@ -1,0 +1,107 @@
+.banner-contect-header{
+    font-size: 64px;
+    margin-bottom: 15px;
+    color: white;
+    position: relative;
+    margin-top: -250px;
+    font-family: var(--fontFamily);
+    font-weight: 700;
+}
+
+.banner-contact-list{
+    list-style: none;
+}
+
+.banner-contact-lists{
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-family: var(--fontFamily);
+}
+
+.banner-contact-container{
+    margin-bottom: 150px;
+}
+
+.banner-home-route{
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-contact-container {
+        padding: 3rem 1rem;
+    }
+
+    .banner-contect-header {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+    }
+
+    .banner-contact-lists {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-contact-container {
+        padding: 2rem 1rem;
+        margin-bottom: -60px;
+        margin-left: -10px !important;
+    }
+
+    .banner-contect-header {
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        margin-top: -100px;
+    }
+
+    .banner-contact-list {
+        margin-top: -20px;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .banner-contact-lists {
+        font-size: 0.85rem;
+    }
+}
+
+/* Tablets and above */
+@media (min-width: 320px) {
+  .banner-contect-header {
+    font-size: 40px;
+    margin-top: -160px;
+  }
+}
+@media (min-width: 576px) {
+  .banner-contect-header {
+    font-size: 40px;
+    margin-top: -230px;
+  }
+}
+
+/* Small desktops */
+@media (min-width: 768px) {
+  .banner-contect-header {
+    font-size: 48px;
+    margin-top: -200px;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 992px) {
+  .banner-contect-header {
+    font-size: 56px;
+    margin-top: -220px;
+  }
+}
+
+/* Extra large desktops */
+@media (min-width: 1200px) {
+  .banner-contect-header {
+    font-size: 64px;
+    margin-top: -250px;
+  }
+}

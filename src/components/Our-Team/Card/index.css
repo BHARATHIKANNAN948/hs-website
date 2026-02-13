@@ -1,0 +1,104 @@
+.team-card {
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card .team-card-img {
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card .team-card-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Smoky white overlay */
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.team-card:hover .team-card-img::before {
+    opacity: 1;
+}
+
+.team-card .team-card-img img {
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+    max-width: 100%;
+    /* height: 450px; */
+}
+
+.team-card .team-card-text {
+    padding: 30px;
+    text-align: center;
+    border-radius: 25px;
+    transition: transform 0.5s ease-in-out;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    position: relative;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%) translateY(0); 
+    width: 100%;
+    max-width: 95%;
+    opacity: 1;
+    margin-top: -50px;
+}
+
+.team-card:hover .team-card-text {
+    transform: translateX(-50%) translateY(10px); /* Moves downward */
+}
+
+.team-card .team-card-text h4 {
+    font-size: var(--card-title-fontSize);
+    margin-bottom: 5px;
+    font-family: var(--fontFamily);
+}
+
+.team-card-name-header {
+    transition: 0.5s;
+    color: black;
+    text-decoration: none;
+    outline: 0 !important;
+    font-family: var(--fontFamily);
+    font-size: 20px;
+}
+
+.team-card .team-card-text p {
+    font-size: 15px;
+    font-family: var(--fontFamily2);
+    margin-bottom: 15px;
+    color: #666666;
+    line-height: 1.8;
+}
+
+.team-social-icons ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.team-social-icons ul li {
+    display: inline-block;
+}
+
+.team-social-icons ul li a {
+    width: 30px;
+    height: 30px;
+    margin: 0px 3px;
+    font-size: 15px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #0064fb;
+    transition: 0.5s ease-in-out;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    text-decoration: none;
+}

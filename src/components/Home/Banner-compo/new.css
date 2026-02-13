@@ -1,0 +1,204 @@
+.why-choose-laptop-img {
+  background-image: url('../../../assets/Images/hs-ban-lap.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  position: relative;
+}
+
+.banner-hs-checking {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+#carouselLaptop {
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+  overflow: hidden;
+  z-index: 2;
+  padding: 30px 0px 20px 0px;
+}
+
+/* #carouselLaptop img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+} */
+
+@media (max-width: 1024px) {
+  .why-choose-laptop-img {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-laptop-img {
+    background-size: 90%;
+    padding: 10px;
+  }
+
+  #carouselLaptop {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-choose-laptop-img {
+    background-size: 100% auto;
+    background-position: top center;
+    padding: 10px 5px;
+  }
+}
+
+.carousel-title-wrapper {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Slide In/Out LEFT (Next) */
+.slide-in-left {
+  transform: translateX(100%);
+  opacity: 0;
+  animation: slideInLeft 0.5s forwards;
+}
+
+.slide-out-left {
+  animation: slideOutLeft 0.5s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+/* Slide In/Out RIGHT (Previous) */
+.slide-in-right {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInRight 0.5s forwards;
+}
+
+.slide-out-right {
+  animation: slideOutRight 0.5s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+
+.carousel-arrows-rightandleft {
+  background-color: #dddddd;
+  padding: 12px 15px;
+  border-radius: 100%;
+  color: black;
+  font-size: 15px;
+}
+
+/* */
+
+.why-choose-phone-img {
+  background-image: url('../../../assets/Images/banner-mobile/home-banner-img.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  position: relative;
+}
+
+.banner-lap-desc {
+  font-family: var(--fontFamily);
+}
+
+
+/* lap new */
+
+.lap-carosouel-in {
+  margin-top: 5px;
+}
+
+.laptop-frame-wrapper {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.carousel-inside-frame-laptop {
+  position: absolute;
+  /* top: 4px; */
+  left: 8px;
+  width: 99%;
+  height: 600px !important;
+  overflow: hidden;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.carousel-inside-frame-laptop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.laptop-frame-overlay {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+@media (max-width: 1024px) {
+  .carousel-inside-frame-laptop {
+    top: -12px;
+    left: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inside-frame-laptop {
+    width: 84%;
+    height: 400px !important;
+    left: 55px;
+    top: -20px;
+  }
+}

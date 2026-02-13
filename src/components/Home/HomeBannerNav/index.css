@@ -1,0 +1,125 @@
+.banner-home-navbar-new {
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/Images/banner-sub-bgimg.png');
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-color: #08a7e6;
+  border-radius: 0px 0px 100px 100px;
+  /* height: 730px; */
+  height: 95vh;
+}
+
+.banner-override-fix {
+  height: 800px !important;
+}
+
+@media (max-width: 1024px) {
+    .banner-override-fix {
+    height: 700px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-override-fix {
+    height: 450px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner-override-fix {
+    height: 570px !important;
+  }
+}
+
+/* .check-check {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 650px;
+} */
+
+@media (min-width: 1700px) and (max-width: 7560px) {
+  .banner-home-navbar-new {
+    height: 85vh;
+  }
+}
+
+.footer-icon-name,
+.footer-icon-name-1 {
+  margin-right: 10px;
+}
+
+.navbar-link-content {
+  font-family: var(--fontFamily);
+  letter-spacing: 1px;
+}
+
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+  padding: 0;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px auto;
+  background-color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(1),
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(3) {
+  transform: rotate(0);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(2) {
+  opacity: 1;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .collapse {
+    display: none !important;
+  }
+
+  .collapse.show {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+  .banner-home-navbar-new {
+    height: 80vh;
+  }
+}
+
+.navbar-dropdown-main {
+  border-radius: 5px !important;
+}

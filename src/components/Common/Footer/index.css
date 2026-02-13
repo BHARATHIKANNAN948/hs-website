@@ -1,0 +1,227 @@
+/* .foo-back{
+    background-color: rgb(91, 138, 239);
+} */
+
+.footer, .copyright{
+    background-color: #ededee;
+}
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-icons span {
+    color: black;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--fontFamily);
+}
+
+.footer-social-icons ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.footer-social-icons ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social-icons ul li .footer-social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 3px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    background-color: transparent;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    border: 1px solid lightgray;
+}
+.footer-social-icons ul li .footer-social-link:hover {
+    /* color: var(--Hs--color); */
+    border: 1px solid var(--Hs--color);
+}
+
+.footer-social-icons ul li .footer-social-link:hover .fa-facebook-f {
+    color: #1877F2;
+}
+.footer-social-icons ul li .footer-social-link:hover .fa-linkedin-in {
+    color: #0A66C2;
+}
+.footer-social-icons ul li .footer-social-link:hover .fa-instagram {
+    color: #E4405F;
+}
+
+.footer-social-link {
+    transition: 0.5s;
+    color: black;
+    text-decoration: none !important;
+    outline: 0 !important;
+    font-family: var(--fontFamily) !important;
+}
+
+.footer-contact-list {
+    padding-left: 20px;
+}
+
+.footer-links h3 {
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    color: black;
+    font-size: 20px;
+}
+
+.footer-content-card {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.footer-content-card i {
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--Hs--color);
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.footer-content-card h5 {
+    margin-bottom: 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-content-card p a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.footer-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-line {
+    border: 1px solid var(--Hs--green);
+    width: 20%;
+    margin-top: -20px;
+}
+
+.footer-heading {
+    text-align: left;
+    font-family: var(--fontFamily);
+
+}
+
+.footer-quick-links {
+    padding-left: 60px;
+}
+
+.footer-quick-links ul {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.footer-quick-links ul li a {
+    margin-top: 10px;
+    display: inline-block;
+    color: #666666;
+    font-size: 15px;
+    font-family: var(--fontFamily2);
+}
+
+.footer-quick-links ul li a i {
+    margin-right: 5px;
+    color: var(--Hs--color);
+}
+
+.footer-newsletter .input-group {
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.footer-newsletter .input-group .form-control {
+    background-color: transparent;
+    color: black;
+    padding: 12px 15px;
+    border: 0px;
+}
+
+.footer-newsletter .input-group .btn {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    font-size: 20px;
+    transition: 0.5sease;
+    border-radius: 10px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #0064fb;
+}
+
+.footer-term-condition {
+    font-size: 15px;
+    /* border-bottom: 0.5px solid lightgray; */
+    margin-left: 2px;
+    cursor: pointer;
+    font-family: var(--fontFamily);
+}
+
+.footer-privacy-policy {
+    margin-right: 2px;
+    cursor: pointer;
+    font-family: var(--fontFamily);
+}
+
+.footer-copy-right {
+    font-family: var(--fontFamily);
+    color: rgb(109, 109, 109);
+}
+
+.footer-hrmon {
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+
+.footer-logo-btm-content {
+    text-align: justify;
+    font-family: var(--fontFamily);
+}
+
+/* .hermon-foot{
+    font-size: 300px;
+    -webkit-text-fill-color: #0000;
+    background: linear-gradient(90deg, #00adee, #8bc53f);
+    background: linear-gradient(90deg, #65d5fd, #b7f567);
+    background-clip: text;
+    margin-bottom: 0 !important;
+    text-align: left;
+    cursor: pointer;
+} */
+ 

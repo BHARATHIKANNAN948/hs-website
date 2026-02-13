@@ -1,0 +1,258 @@
+.workflow-card {
+  font-family: var(--fontFamily);
+  ;
+  border-radius: 8px;
+  /* background-color: rgba(251, 214, 214, 0.05); */
+  background-color: white;
+  padding: 16px 32px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 200px;
+}
+
+.workflow-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.workflow-label {
+  font-size: 17px;
+  opacity: 0.8;
+  line-height: 1.4;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.workflow-ico {
+  position: absolute;
+  bottom: 16px;
+  left: 30px;
+  /* opacity: 0.3; */
+  transition: left 0.3s ease, opacity 0.3s ease;
+}
+
+.workflow-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-image: linear-gradient(to bottom, var(--Hs--color), var(--Hs--green));
+  border-radius: 8px 0 0 8px;
+  transition: width 0.3s ease;
+}
+
+.workflow-card:hover::before {
+  width: 10px;
+}
+
+.workflow-card:hover {
+  border-left-width: 10px;
+}
+
+.workflow-title,
+.workflow-label {
+  transition: transform 0.3s ease;
+}
+
+.workflow-card:hover .workflow-title,
+.workflow-card:hover .workflow-label {
+  transform: translateX(20px);
+}
+
+.workflow-card:hover .workflow-ico {
+  left: 52px;
+  opacity: 1;
+}
+
+.workflow-gradient {
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 50%;
+  filter: blur(200px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workflow-card:hover .workflow-gradient {
+  opacity: 0.04;
+}
+
+
+/*  */
+
+/* Popup overlay */
+.workflow-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+/* Popup box */
+.workflow-popup-content {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 400px;
+  width: auto;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.workflow-popup-cardimg{
+  /* padding-bottom: 20px; */
+  border-radius: 21px 21px 0px 0px !important;
+}
+
+.worflow-popup-img {
+  border-radius: 20px 20px 60px 0px;
+  position: relative;
+}
+
+.workflow-popup-con-text {
+  padding: 20px;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  /* margin-top: -20px !important; */
+  position: absolute;
+  max-width: 400px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*  */
+
+.home-work-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.home-work-popup-box {
+  position: relative;
+  background: #fff;
+  width: 90%;
+  max-width: 750px;
+  border-radius: 25px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.3);
+  padding: 25px 25px 25px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: visible;
+  animation: scaleUp 0.3s ease;
+}
+
+.home-work-popup-img {
+  position: relative;
+  flex: 0 0 250px;
+  height: 330px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: -40px;
+  margin-bottom: -40px; 
+  box-shadow: 4px 13px 30px rgba(89, 88, 88, 0.2);
+  z-index: 2;
+}
+
+.home-work-popup-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-work-popup-content {
+  flex: 1;
+  z-index: 1;
+}
+
+.home-work-popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+  z-index: 5;
+}
+
+/* Animation */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .home-work-popup-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .home-work-popup-img {
+    flex: unset;
+    width: 80%;
+    height: 220px;
+    margin: -60px auto -30px auto; 
+  }
+
+  .home-work-popup-close {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.workflow-label {
+  display: -webkit-box;
+  line-clamp: 1; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

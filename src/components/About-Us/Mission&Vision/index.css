@@ -1,0 +1,86 @@
+    .about-grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 300px);
+      gap: 0;
+    }
+
+    .about-grid-item {
+      padding: 40px 30px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-family: var(--fontFamily);
+    }
+
+    .about-text-white {
+      background: #000;
+      color: #fff;
+    }
+
+    .about-text-green {
+      background: var(--Hs--green);
+      color: #fff;
+    }
+
+    .about-text-orange {
+      /* background: #f15a29; */
+      background: var(--Hs--color);
+      color: #fff;
+    }
+
+    .about-text-white h2,
+    .about-text-orange h2 {
+      margin-bottom: 15px;
+    }
+
+    .about-text-white p,
+    .about-text-orange p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .about-bg-image {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about-bg-1 {
+      background-image: url('../../../assets/Images/about-mission-1.jpeg');
+    }
+
+    .about-bg-2 {
+      background-image: url('../../../assets/Images/about-value-img.png');
+    }
+
+    .about-bg-3 {
+      background-image: url('../../../assets/Images/about-mission-3.jpeg');
+    }
+
+    .about-text-white a {
+      color: #007bff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .about-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 990px) {
+      .about-text-green {
+        padding: 20px !important;
+      }
+       .about-text-white{
+        padding: 20px;
+       }
+    }
+
+    .about-mission-heading-content {
+      font-family: var(--fontFamily);
+    }

@@ -1,0 +1,302 @@
+:root {
+    --Hs--color: #00adef;
+    --Hs--green: #8bc43f;
+}
+
+.default-section-title h6 {
+    color: var(--Hs--color);
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: var(--fontFamily2);
+}
+
+.default-section-title h3 {
+    color: black;
+    font-size: 36px;
+    font-family: var(--fontFamily);
+    font-weight: 600;
+}
+
+.case-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.case-card:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.case-study-image {
+    width: 420px;
+    height: 250px;
+    display: block;
+}
+
+.case-card .case-study-text {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.case-card:hover .case-study-text {
+    transform: translateY(0);
+}
+
+.case-study-icon-con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.case-card .case-study-text .fa-eye {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    font-weight: 900;
+}
+
+.case-card .case-study-text i:hover {
+    transform: scale(1.3);
+}
+
+.case-study-text-place {
+    width: 100%;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-card .case-study-text p {
+    color: #eeeeee;
+    margin: 7px 0px;
+    font-size: 15px;
+    font-family: var(--fontFamily2);
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.case-card .case-study-text h4 {
+    color: white;
+    font-family: var(--fontFamily);
+    margin-top: -15px;
+    font-size: 25px;
+}
+
+.calender-case-study-ad {
+    margin-top: 37px;
+}
+
+.sidebar-content-details {
+    margin-top: -30px !important;
+}
+
+.home_celebrity_header {
+    font-size: 28px;
+    font-weight: bold !important;
+    font-family: var(--fontFamily);
+    color: var(--Hs--color);
+}
+
+.case-get-caleder-icon {
+    color: var(--Hs--green);
+}
+
+.case-get-caleder {
+    color: rgb(160, 160, 160);
+}
+
+.case-get-detail-web {
+    font-size: 18px;
+    font-weight: 700;
+    color: gray;
+}
+
+
+/*  */
+
+.gallery-selected {
+    border: 1px solid green !important;
+    border-radius: 6px !important;
+}
+
+.gallery-tick {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 15px;
+    color: green;
+    background: white;
+    border-radius: 50%;
+}
+
+
+/* platform */
+
+.platform-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frond-end-img {
+    width: 100px;
+    background-color: rgb(236, 235, 235);
+    padding: 20px 25px;
+    border-radius: 100%;
+}
+
+.platform-detail-data {
+    color: var(--Hs--green);
+}
+
+
+/* accourting */
+
+.accordion-item {
+    border: 1px solid var(--Hs--green) !important;
+    border-radius: 5px !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.accordion-button::after {
+    transform: scale(0.7);
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: scale(0.7) rotate(180deg);
+}
+
+.accordion-button {
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    /* color: var(--Hs--green); */
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0px !important;
+}
+
+.accordion-body {
+    border: 1px solid #ddd;
+    font-size: 15px;
+    line-height: 1.6;
+    border: 0 !important;
+    text-align: justify;
+    margin-top: -15px !important;
+}
+
+/*  
+*/
+
+
+.case-study-new-custom-card {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: var(--fontFamily);
+}
+
+.case-study-new-card-overlay {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 5px;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+
+.case-study-new-custom-card:hover .case-study-new-card-overlay {
+    background-color: transparent;
+}
+
+/* dark overlay (on hover) */
+.case-study-new-hover-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.case-study-new-card-overlay p {
+    font-weight: 500;
+}
+.case-study-new-card-overlay h4 {
+    font-weight: 600;
+}
+/* eye icon */
+.case-study-new-hover-overlay i {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    font-weight: 900;
+}
+
+.case-study-new-hover-overlay i:hover {
+    transform: scale(1.3);
+}
+/* hover effect */
+.case-study-new-custom-card:hover .case-study-new-hover-overlay {
+    opacity: 1;
+}
+
+/* keep text visible */
+.case-study-new-custom-card:hover .case-study-new-card-overlay {
+    opacity: 1;
+}

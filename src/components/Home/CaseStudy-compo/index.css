@@ -1,0 +1,90 @@
+.blog-card {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;;
+    margin-top: 20px;
+}
+
+.blog-card .blog-img {
+    overflow: hidden;
+}
+
+.blog-card .blog-img .case-study-img{
+    transition: 0.5sease;
+}
+
+.case-study-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-card .blog-text-area {
+    padding: 0px 30px 25px 30px;
+    text-align: left;
+}
+
+.blog-card .blog-text-area span {
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: white;
+    background-color: #2e2f46;
+    transition: 0.5sease;
+    position: relative;
+    top: -12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.blog-card .blog-text-area .blog-date ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.blog-card .blog-text-area .blog-date {
+    margin-top: 10px;
+}
+
+.blog-card .blog-text-area .blog-date ul li {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    color: #666666;
+    font-size: 14px;
+    font-family: var(--fontFamily2);
+}
+
+.blog-card {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.blog-img {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.case-study-img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover .case-study-img {
+    transform: scale(1.1); 
+}
+
+.blog-card:hover .case-study-tech {
+    background-color: var(--Hs--color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.case-study-home-icons{
+    color: var(--Hs--color);
+}
+
+.bg-f9faff {
+    background-color: #f9faff;
+}
+
+.case-study-home-content-date{
+    display: flex;
+    justify-content: space-between !important;
+}

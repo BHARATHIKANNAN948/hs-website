@@ -1,0 +1,21 @@
+.teams-card-title{
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
+.team-card-text{
+    text-align: justify !important;
+}
+
+.teams-card-btn-route{
+    border: 0;
+    background-image: linear-gradient(to right,var(--Hs--color),var(--Hs--green));
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.no-data-found-img{
+    width: 300px;
+}
